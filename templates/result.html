@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdeef0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #f50606;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>{{ output }}</p>
+    <img src="{{ url_for('static', filename=image_filename) }}" alt="Uploaded Image" style="width: 400px; height: auto;">
+    <!-- <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="submit" value="Reset">
+    </form> -->
+</body>
+</html>
